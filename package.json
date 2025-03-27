@@ -1,15 +1,20 @@
 {
-  "name": "ds2-editor",
+  "name": "ds2-editor_test",
   "version": "0.1.0",
-  "private": true,
+  "license": "MIT",
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve --skip-plugins @vue/cli-plugin-eslint",
     "build": "vue-cli-service build --skip-plugins @vue/cli-plugin-eslint",
     "build-dev": "vue-cli-service build --mode development --skip-plugins @vue/cli-plugin-eslint",
     "build-watch": "vue-cli-service build --mode development --skip-plugins @vue/cli-plugin-eslint --watch",
     "lint": "vue-cli-service lint",
-    "generate": "node scripts/generate_web_pictures.mjs"
+    "generate": "node scripts/generate_web_pictures.mjs",
+    "pack:build": "node ./build.esbuild.js",
+    "pack:build:tsc": "tsc --project ./tsconfig.package.json"
   },
+  "repository": "https://github.com/JadeJo2019/d2andd2redit",
+  "main": "main.mjs",
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "@vueform/multiselect": "^2.6.6",
