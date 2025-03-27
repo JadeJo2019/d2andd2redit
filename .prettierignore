@@ -1,0 +1,17 @@
+# Ignore git hidden files:
+**/.git
+**/.svn
+**/.hg
+
+# Ignore dependencies
+**/node_modules
+
+# Ignore build dir
+dist
+
+# Ignore static data
+lib
+public/d2
+
+# Ignore test output
+#coverage
