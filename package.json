@@ -14,7 +14,6 @@
     "pack:build:tsc": "tsc --project ./tsconfig.package.json"
   },
   "repository": "https://github.com/JadeJo2019/d2andd2redit",
-  "main": "main.mjs",
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "@vueform/multiselect": "^2.6.6",
